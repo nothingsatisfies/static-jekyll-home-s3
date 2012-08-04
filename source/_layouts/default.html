@@ -1,14 +1,77 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
-<body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
-  <header role="banner">{% include header.html %}</header>
-  <nav role="navigation">{% include navigation.html %}</nav>
-  <div id="main">
-    <div id="content">
-      {{ content | expand_urls: root_url }}
-    </div>
-  </div>
-  <footer role="contentinfo">{% include footer.html %}</footer>
-  {% include after_footer.html %}
+<body>
+<header>
+		<h2>NOTHING SATISFIES.</h2>
+		<h3>WHAT WE DO</h3>
+		<h3>HOW WE DO</h3>
+		<h3>CONNECT</h3>
+</header>
+<br class="clear" />
+
+<div class="fullscreen" id="mainheader">
+  <center><p class="LeagueGothicRegular">NOTHING SATISFIES PERFECTIONISTS.</p></center>
+</div>
+
+
+<script>
+	$(document).ready(function() {
+    // animate main box when loading the page
+    $('#mainheader').css({'opacity':0.0}).animate({'opacity':1.0},3000,'easieEaseIn');
+    
+    // setup interaction on the web page (and set the initial easing)
+    setupInteraction('easieEaseInOut');
+  });
+</script>
+
+
+
+<div class="center">
+	<div class="columns six offset-by-four">
+		<h3 class="league">We Design</h3>
+	</div>
+	<div class="columns six">
+		<h3 class="league">We Code</h3>
+	</div>
+
+</div>
+<br class="clear" />
+
+
+
+<div class="footer">
+	
+	<div class="columns two">
+	<p class="stmariethinfooter"><strong>FEELIN:</strong></p>
+	</div>
+
+
+	<div class="columns three">
+		<div id="circle1" class="circle"></div>
+		<div id="circle2" class="circle"></div>
+		<p class="stmariethinfooter"><strong>NEWYORK</strong></p>
+
+	</div>
+	
+	<div class="columns three">
+		<div id="circle3" class="circle"></div>
+		<div id="circle4" class="circle"></div>
+		<p class="stmariethinfooter"><strong>TOKYO</strong></p>
+	</div>
+	
+	<div class="columns four">
+		<div id="circle5" class="circle"></div>
+		<div id="circle6" class="circle"></div>
+		<p class="stmariethinfooter"><strong>SANFRANCISCO</strong></p>
+	</div>
+	
+	<div class="columns four">
+		<div id="circle7" class="circle"></div>
+		<div id="circle8" class="circle"></div>	
+		<p class="stmariethinfooter"><strong>SANTABARBARA</strong></p>
+	</div>		
+</div>
+
+
 </body>
 </html>

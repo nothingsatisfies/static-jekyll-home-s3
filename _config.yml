@@ -5,8 +5,7 @@
 url: http://nothingsatisfies.com
 title: Nothing Satisfies
 subtitle: A blogging framework for hackers.
-author: Bent
-simple_search: http://google.com/search
+author: Bent 
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
