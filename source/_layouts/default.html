@@ -1,64 +1,11 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
 <body>
-<div class="fullscreen" id="ns1">
-<center><p>NOTHING SATISFIES PERFECTIONISTS.</p></center>
-</div>
-<div class="fullscreen2" id="ns2">
-<center><p>NOTHING SATISFIES.</p></center>
-</div>
-<div class="fullscreen3" id="ns3">
-<center><p>NOTHING SATISFIES LIKE ICE CREAM.</p></center>
-</div>
-<div class="fullscreen4" id="ns4">
-<center><p>NOTHING SATISFIES ____________.</p></center>
-</div>
-<div class="fullscreen5" id="ns5">
-<center><p>NOTHING SATISFIES OUR HUNGER.</p></center>
-</div>
-<div class="fullscreen6" id="ns6">
-<center><p>NOTHING SATISFIES LIKE SUCCESS.</p></center>
-</div>
+
+{% include intro.html %}
+{% include header.html %}
 
 
-
-
-
-<script>
-	$(document).ready(function() {
-    $('#ns2').css({'opacity':1.0}).delay(2000).animate({'opacity':0.0},1000,'easieEaseIn').queue(function(){
-    		$('#ns2').hide()});
-    
-    $('#ns1').css({'opacity':1.0}).delay(5000).animate({'opacity':0.0},1000,'easieEaseIn').queue(function(){
-    		$('#ns1').hide()});
-    
-    $('#ns3').css({'opacity':1.0}).delay(8000).animate({'opacity':0.0},1000,'easieEaseIn').queue(function(){
-    		$('#ns3').hide()});
-
-    $('#ns4').css({'opacity':1.0}).delay(11000).animate({'opacity':0.0},1000,'easieEaseIn').queue(function(){
-    		$('#ns4').hide()});
-
-    $('#ns5').css({'opacity':1.0}).delay(14000).animate({'opacity':0.0},1000,'easieEaseIn').queue(function(){
-    		$('#ns5').hide()});    		    
-
-    $('#ns6').css({'opacity':1.0}).delay(17000).animate({'opacity':0.0},1000,'easieEaseIn').queue(function(){
-    		$('#ns6').hide()});    		    
-
-
-    setupInteraction('easieEaseInOut');
-  });
-</script>
-
-
-<header>
-  <div>
-  	<center><h2>NOTHING SATISFIES.</h2></center>
-  </div>
-
-
-</header>
-
-
-
+{% include footer.html %}
 </body>
 </html>
